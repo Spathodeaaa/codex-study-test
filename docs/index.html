@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#edf2f7">
+  <meta name="description" content="按时间整理 Elon Musk 最近72小时的 X 发言、引用与回复，每条直达原帖。">
+  <title>Musk Signal · 马斯克近三日动态</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="3"/><path d="M15 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><rect x="14" y="14" width="6" height="6" rx="1.5"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v.2"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </defs></svg>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#top" aria-label="Musk Signal 首页"><span class="brand-mark">m<span></span></span><span>Musk <em>Signal</em></span></a>
+    <div class="sidebar-rule"></div>
+    <p class="nav-label">你的阅读空间</p>
+    <nav aria-label="主要导航">
+      <a class="nav-item active" href="#feed"><svg><use href="#i-grid"/></svg>近三日动态<span class="nav-count" id="nav-count">…</span></a>
+      <button class="nav-item" data-open-method><svg><use href="#i-info"/></svg>关于收录</button>
+      <a class="nav-item" href="https://x.com/elonmusk" target="_blank" rel="noopener noreferrer"><span class="x-nav">𝕏</span>X 个人主页<svg class="nav-out"><use href="#i-arrow"/></svg></a>
+    </nav>
+    <div class="sidebar-window"><div class="small-orbit" aria-hidden="true"><span></span><span></span><span></span></div><h2>少一点噪音。<br>多一点上下文。</h2><p>原帖、引用与回复，<br>沿着时间线一起读。</p><a href="#feed" class="window-link">开始浏览 <span>↓</span></a></div>
+    <div class="sidebar-bottom"><span class="snapshot-dot"></span>收录快照<span class="tz">香港时间 UTC+8</span><p>独立整理，非 X 官方网站</p></div>
+  </aside>
+
+  <main id="top">
+    <header class="topbar"><button id="menu-toggle" class="icon-button mobile-only" aria-label="打开导航" aria-expanded="false" aria-controls="sidebar"><svg><use href="#i-menu"/></svg></button><div class="breadcrumb">观察人物 <span>/</span> <strong>Elon Musk</strong></div><button class="collection-button" data-open-method><svg><use href="#i-clock"/></svg><span id="capture-label">正在载入收录时间</span></button></header>
+    <div class="page-content">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-text"><div class="account-pill"><span class="account-avatar">𝕏</span><span>@elonmusk</span><svg class="verified-badge" viewBox="0 0 20 20" aria-label="X 已认证账号"><path fill="currentColor" d="m10 0 2.4 2 3.1.3.9 3 2.5 1.9-.9 3 .9 3-2.5 1.8-.9 3-3.1.4L10 20l-2.4-1.6-3.1-.4-.9-3L1 13.2l.9-3-.9-3 2.6-1.9.9-3L7.6 2z"/><path d="m6 10 2.5 2.5L14 7" fill="none" stroke="white" stroke-width="1.7"/></svg></div><h1 id="page-title">X 上的马斯克。<br><span>只看最近三天。</span></h1><p class="hero-description">按时间整理他的发言与回复，<br class="mobile-only">一键回到原帖，读懂完整语境。</p><div class="hero-window"><svg><use href="#i-clock"/></svg><span id="window-label">最近 72 小时</span><span class="timezone-label">香港时间</span></div></div>
+        <div class="time-art" aria-hidden="true"><div class="orbital orbital-a"></div><div class="orbital orbital-b"></div><div class="orbital orbital-c"></div><div class="orbit-point"></div><div class="time-art-center"><span>72<span class="hours-unit">h</span></span><p>一个有边界的时间窗</p></div><span class="orbit-caption">言论有出处，阅读有坐标。</span></div>
+      </section>
+
+      <div class="workspace">
+        <section class="feed-column" id="feed" aria-label="动态列表">
+          <div class="feed-heading"><h2>时间线 <span id="total-count">…</span></h2><label class="sort-control"><span class="sr-only">排序方式</span><select id="sort"><option value="newest">最新优先</option><option value="oldest">最早优先</option></select></label></div>
+          <label class="search-box"><svg><use href="#i-search"/></svg><input id="search" type="search" placeholder="搜索话题或关键词，如 Grok、Starship…" autocomplete="off"><kbd>/</kbd></label>
+          <div class="topic-filters" id="topic-filters" role="group" aria-label="按主题筛选"></div>
+          <div class="day-filters" id="day-filters" role="group" aria-label="按日期筛选"></div>
+          <div class="result-note" id="result-note" aria-live="polite">正在整理动态…</div>
+          <div id="posts" class="posts"><div class="loading-message"><span class="loading-spinner"></span>正在载入收录快照</div></div>
+          <div class="feed-end" id="feed-end" hidden><div class="end-line"></div><span>你已读到这份快照的尽头</span><div class="end-line"></div></div>
+          <div class="bottom-note">这里收录的是可核对的公开记录，可能未覆盖全部动态。<br>中文为整理摘要，涉及观点与指称均归属于发帖者；完整内容以 X 原帖为准。</div>
+        </section>
+
+        <aside class="reading-aside" aria-label="收录信息">
+          <section class="profile-panel"><div class="profile-top"><div class="profile-avatar">𝕏</div><span class="profile-tag">观察账号</span></div><h2>Elon Musk</h2><a class="profile-handle" href="https://x.com/elonmusk" target="_blank" rel="noopener noreferrer">@elonmusk <svg><use href="#i-arrow"/></svg></a><p>从航天到人工智能，<br>把分散的动态放进同一条时间线。</p><div class="profile-stats"><div><strong id="aside-count">—</strong><span>条已收录</span></div><div><strong id="topic-count">—</strong><span>个主题</span></div><div><strong>72<span>h</span></strong><span>时间窗口</span></div></div></section>
+          <section class="distribution-panel"><h3>这些天，他说了什么</h3><div id="daily-chart" class="daily-chart"></div><p>按本次快照中的动态数量统计</p></section>
+          <section class="source-panel"><div class="source-icon"><svg><use href="#i-check"/></svg></div><h3>每一条，都有出处</h3><p>每条动态附有原帖链接。点击“在 X 查看”，直接跳转到对应发言。</p><button class="text-button" data-open-method>查看收录说明 <svg><use href="#i-info"/></svg></button></section>
+          <a class="x-search-link" id="x-search" href="https://x.com/search?q=from%3Aelonmusk&f=live" target="_blank" rel="noopener noreferrer">在 X 搜索这个时间段<svg><use href="#i-arrow"/></svg></a>
+        </aside>
+      </div>
+      <footer><a href="#top" class="footer-brand">Musk <em>Signal</em></a><p>把时间留给阅读，把出处交给链接。</p><span>© 2026</span></footer>
+    </div>
+  </main>
+
+  <dialog id="method-dialog" aria-labelledby="method-title"><div class="dialog-top"><span class="dialog-symbol">𝕏</span><button id="close-dialog" class="icon-button" aria-label="关闭说明">×</button></div><h2 id="method-title">关于这份收录</h2><p>这是最近 72 小时内、可通过公开记录核对的马斯克 X 动态快照，包含他的原帖、带评论的引用和回复，不把他人被转发的文字当作他的发言。</p><dl><dt>时间范围</dt><dd id="method-window"></dd><dt>更新时间</dt><dd id="method-captured"></dd><dt>文字处理</dt><dd>中文标题和摘要是整理者的转述；原文节选单独标注。政治、社会等争议观点只作为发帖者的观点呈现，不作为事实结论。</dd><dt>来源与覆盖</dt><dd>通过公开存档核对正文、时间与原始链接，逐条列出来源。本页是静态快照，不自动抓取 X，也不保证收录完整。</dd></dl><a href="https://musktracker.com/" target="_blank" rel="noopener noreferrer" class="dialog-source">公开记录来源：Musktracker <svg><use href="#i-arrow"/></svg></a><button class="primary-button" id="method-done">继续阅读</button></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
